@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="10dp"
+            android:text="Visual Geo-Localization"
+            android:textSize="24sp"
+            android:textColor="@android:color/holo_red_dark"
+            android:gravity="center" />
+
+        <!-- Select Test Image -->
+        <Button
+            android:id="@+id/selectTestImage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Select Test Image" />
+        <TextView
+            android:id="@+id/selectTestImageResult"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Test Image Location: "
+            android:textSize="16sp"
+            android:textColor="@android:color/holo_blue_dark" />
+
+        <!-- Select Training Images -->
+        <Button
+            android:id="@+id/selectTrainingImages"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Select Training Images" />
+        <TextView
+            android:id="@+id/selectTrainingImagesResult"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Training Image Locations: "
+            android:textSize="16sp"
+            android:textColor="@android:color/holo_blue_dark" />
+
+        <!-- Find Matching Points -->
+        <Button
+            android:id="@+id/applySiftWeighting"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Find Matching Points" />
+        <TextView
+            android:id="@+id/applySiftWeightingResult"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Matching Points: "
+            android:textSize="16sp"
+            android:textColor="@android:color/holo_green_dark" />
+
+        <!-- Check Threshold -->
+        <Button
+            android:id="@+id/checkThreshold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Check Threshold" />
+        <TextView
+            android:id="@+id/thresholdResult"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Threshold Check: "
+            android:textSize="16sp"
+            android:textColor="@android:color/holo_red_dark" />
+
+        <!-- Estimate Location -->
+        <Button
+            android:id="@+id/estimateLocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Estimate Location" />
+        <TextView
+            android:id="@+id/estimatedLocationResult"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Estimated Location: "
+            android:textSize="16sp"
+            android:textColor="@android:color/holo_orange_dark" />
+
+        <!-- Calculate Distance -->
+        <Button
+            android:id="@+id/calculateDistance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Calculate Deviation" />
+        <TextView
+            android:id="@+id/distanceResult"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Distance: "
+            android:textSize="16sp"
+            android:textColor="@android:color/holo_purple" />
+
+        <!-- ImageView to display matches -->
+        <ImageView
+            android:id="@+id/matchesImageView"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="16dp"
+            android:contentDescription="Matching Points Image" />
+    </LinearLayout>
+</ScrollView>
