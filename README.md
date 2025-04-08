@@ -25,9 +25,6 @@
 
     Clone the repository:
 
-    bash
-    Copy
-    Edit
     git clone https://github.com/DipuYadav5253/GeoLocalization-App.git 
     Open the project in Android Studio.
 
